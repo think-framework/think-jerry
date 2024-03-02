@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    enabled: false
+
+server:
+  port: 38080
+
+think:
+  web:
+    server:
+      port: 38085
+    endpoint:
+      port ${server.port}

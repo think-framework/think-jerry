@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>io.github.thinkframework</groupId>
+        <artifactId>think-tom</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.thinkframework</groupId>
+    <artifactId>think-tom-startup</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+
+    <description>基于Freemarker的代码生成工具</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+    <connection>https://github.com/think-projects/think-generator.git</connection>
+    <developerConnection>https://github.com/think-projects/think-generator.git</developerConnection>
+    <url>https://github.com/think-projects/think-generator</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>lixiaobin</id>
+            <name>lixiaobin</name>
+            <email>hdhxby@qq.com</email>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <!-- 一方库 -->
+        <dependency>
+            <groupId>io.github.thinkframework</groupId>
+            <artifactId>think-tom-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- 二方库 -->
+        <dependency>
+            <groupId>io.github.thinkframework</groupId>
+            <artifactId>think-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.thinkframework</groupId>
+            <artifactId>think-context</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- 三方库 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
